@@ -1,0 +1,133 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+/* ? =========== VARIABLES CSS ========= */
+:root {
+  --background-color-light: #f1f5f9;
+  --background-color-light-secondary: #d4d4d8;
+  --text-color-light: #94a3b8;
+  --text-color-light-secondary: #10b981;
+  --background-color-dark: #172554;
+  --background-color-dark-secondary: #1e40af;
+  --text-color-dark: #bfdbfe;
+  --text-color-dark-secondary: #312e81;
+}
+
+/* ? ========== GENERAL STYLES ========= */
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+html,
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: var(--background-color-light);
+  color: var(--text-color-light);
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* ? ========== REUSABLE CSS CLASSES ========== */
+.container {
+  max-width: 1120px;
+}
+
+.grid {
+  display: grid;
+  gap: 1.5rem;
+}
+
+/* ? ========== HEADER ========== */
+.header {
+  position: fixed;
+  width: 100%;
+  background-color: var(--background-color-light);
+  top: 0;
+  left: 0;
+  z-index: 2;
+}
+
+.nav {
+  /* ! Si queres hacerlo mas grande despues no te olvides de ajustar los botones */
+  height: 3rem;
+  font-size: 1.1rem;
+  padding: 0.5rem 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--background-color-light-secondary);
+  position: relative;
+}
+
+.nav_logo {
+  font-weight: 700;
+  color: var(--text-color-light);
+}
+
+.nav_logo span {
+  color: black;
+}
+
+.nav_list {
+  position: fixed;
+  top: 0;
+  right: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+  width: 70%;
+  /* * Para que no sea vea */
+  visibility: hidden;
+  transform: translateX(20px);
+  transition: transform 0.3s ease;
+  opacity: 0.8;
+}
+
+.nav_active {
+  visibility: visible;
+  backdrop-filter: blur(20px);
+  padding: 2rem;
+  background-color: rgb(170, 168, 168);
+  transform: translateX(0);
+}
+
+.nav_toggle,
+.nav_close {
+  font-size: 2rem;
+  cursor: pointer;
+  color: #333;
+  position: absolute;
+  z-index: 999;
+  right: 0;
+  top: 0;
+}
+
+.nav_close {
+  display: none;
+}
+
+@media screen and (min-width: 1023px) {
+  .nav_toggle,
+  .nav_close {
+    display: none;
+  }
+
+  .nav_active {
+    display: none;
+  }
+
+  .nav_list {
+    position: static;
+    flex-direction: row;
+    visibility: visible;
+  }
+}
