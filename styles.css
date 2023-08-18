@@ -62,11 +62,11 @@ a {
 
 .nav {
   font-size: 1.1rem;
-  padding: 0 2rem;
   display: flex;
+  margin: 0 auto;
+  padding: 0.5rem 2rem;
   justify-content: space-between;
   align-items: center;
-  position: relative;
   flex: 1;
 }
 

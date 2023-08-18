@@ -1,5 +1,4 @@
 // ? ==== NAV TOGGLE BUTTONS ===
-
 const navToggle = document.getElementById("nav-toggle");
 const navClose = document.getElementById("nav-close");
 const navList = document.querySelector(".nav_list");
