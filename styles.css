@@ -2,14 +2,15 @@
 
 /* ? =========== VARIABLES CSS ========= */
 :root {
+  --background-color-dark: #172554;
+  --background-color-dark-secondary: #1e40af;
+  --text-hover-color: black;
+  --text-color-dark: #f8f8f8;
+  --text-color-dark-secondary: #312e81;
   --background-color-light: #f1f5f9;
   --background-color-light-secondary: #d4d4d8;
   --text-color-light: #94a3b8;
   --text-color-light-secondary: #10b981;
-  --background-color-dark: #172554;
-  --background-color-dark-secondary: #1e40af;
-  --text-color-dark: #bfdbfe;
-  --text-color-dark-secondary: #312e81;
 }
 
 /* ? ========== GENERAL STYLES ========= */
@@ -23,7 +24,7 @@
 html,
 body {
   font-family: "Poppins", sans-serif;
-  background-color: var(--background-color-light);
+  background-color: var(--background-color-dark);
   color: var(--text-color-light);
 }
 
@@ -48,28 +49,31 @@ a {
 /* ? ========== HEADER ========== */
 .header {
   position: fixed;
+  height: 5rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
   width: 100%;
-  background-color: var(--background-color-light);
+  background-color: var(--background-color-dark-secondary);
   top: 0;
   left: 0;
   z-index: 2;
 }
 
 .nav {
-  /* ! Si queres hacerlo mas grande despues no te olvides de ajustar los botones */
-  height: 3rem;
   font-size: 1.1rem;
-  padding: 0.5rem 1rem;
+  padding: 0 2rem;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: var(--background-color-light-secondary);
   position: relative;
+  flex: 1;
 }
 
 .nav_logo {
+  font-size: 1.1rem;
   font-weight: 700;
-  color: var(--text-color-light);
+  color: var(--text-color-dark);
 }
 
 .nav_logo span {
@@ -82,21 +86,28 @@ a {
   right: 0;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  gap: 2rem;
-  width: 70%;
+  gap: 3rem;
+  width: 60%;
+  height: 100%;
   /* * Para que no sea vea */
   visibility: hidden;
   transform: translateX(20px);
   transition: transform 0.3s ease;
-  opacity: 0.8;
+}
+
+.nav_link {
+  color: var(--text-color-dark);
+}
+
+.nav_link:hover {
+  color: var(--text-hover-color);
 }
 
 .nav_active {
   visibility: visible;
   backdrop-filter: blur(20px);
+  max-width: 400px;
   padding: 2rem;
-  background-color: rgb(170, 168, 168);
   transform: translateX(0);
 }
 
@@ -104,15 +115,11 @@ a {
 .nav_close {
   font-size: 2rem;
   cursor: pointer;
-  color: #333;
-  position: absolute;
-  z-index: 999;
-  right: 0;
-  top: 0;
+  color: white;
 }
 
 .nav_close {
-  display: none;
+  z-index: 10;
 }
 
 @media screen and (min-width: 1023px) {
@@ -121,13 +128,10 @@ a {
     display: none;
   }
 
-  .nav_active {
-    display: none;
-  }
-
   .nav_list {
     position: static;
     flex-direction: row;
     visibility: visible;
+    justify-content: center;
   }
 }

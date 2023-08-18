@@ -15,3 +15,16 @@ navClose.addEventListener("click", () => {
   navToggle.style.display = "block";
   navClose.style.display = "none";
 });
+
+// ? ==== AJUSTE VISUAL AL CAMBIAR A TAMAÑO TABLET ===
+const desktopMediaQuery = window.matchMedia("(min-width: 1023px)");
+
+desktopMediaQuery.addEventListener("change", (event) => {
+  if (event.matches) {
+    navList.classList.remove("nav_active");
+    navToggle.style.display = "none";
+    navClose.style.display = "none";
+  } else {
+    navToggle.style.display = "block";
+  }
+});
