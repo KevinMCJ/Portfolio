@@ -14,7 +14,6 @@
 }
 
 /* ? ========== GENERAL STYLES ========= */
-
 * {
   box-sizing: border-box;
   padding: 0;
@@ -36,6 +35,13 @@ a {
   text-decoration: none;
 }
 
+input,
+textarea,
+button,
+body {
+  font-family: inherit;
+}
+
 /* ? ========== REUSABLE CSS CLASSES ========== */
 .container {
   max-width: 1120px;
@@ -48,13 +54,20 @@ a {
   gap: 1.5rem;
 }
 
+.title_span {
+  color: var(--background-button-primary);
+}
+
 .btnPrimary {
   padding: 0.5rem 1rem;
   color: var(--text-color-dark);
   font-weight: 600;
   border-radius: 10px;
   background-color: var(--background-button-primary);
+  width: fit-content;
 }
+
+/* ************************* MOBILE FIRST ************************* */
 
 /* ? ========== HEADER ========== */
 .header {
@@ -88,19 +101,22 @@ a {
   color: black;
 }
 
-.nav_list {
+.nav_menu {
   position: fixed;
   top: 0;
-  right: 0;
+  right: -100%;
+  width: 60%;
+  max-width: 400px;
+  padding: 2rem;
+  height: 100%;
+  backdrop-filter: blur(24px);
+  transition: right 0.4s;
+}
+
+.nav_list {
   display: flex;
   flex-direction: column;
   gap: 3rem;
-  width: 60%;
-  height: 100%;
-  /* * Para que no sea vea */
-  visibility: hidden;
-  transform: translateX(20px);
-  transition: transform 0.3s ease;
 }
 
 .nav_link {
@@ -112,11 +128,7 @@ a {
 }
 
 .nav_active {
-  visibility: visible;
-  backdrop-filter: blur(20px);
-  max-width: 400px;
-  padding: 2rem;
-  transform: translateX(0);
+  right: 0;
 }
 
 .nav_toggle,
@@ -127,8 +139,9 @@ a {
 }
 
 .nav_close {
-  display: none;
-  z-index: 10;
+  position: absolute;
+  top: 1rem;
+  right: 2rem;
 }
 
 /* ? ========== HOME SECTION ========== */
@@ -137,12 +150,26 @@ a {
   place-items: center;
 }
 
-.home_info {
+.home_content {
   color: var(--text-color-dark);
+  display: grid;
+  row-gap: 2rem;
 }
 
-.title_span {
-  color: var(--background-button-primary);
+.home_data h3 {
+  font-size: 1.3rem;
+}
+
+.home_data h2 {
+  font-size: 1.6rem;
+}
+
+.home_description {
+  margin: 1rem 0;
+}
+
+.btnResume {
+  margin-top: 2rem;
 }
 
 .social {
@@ -164,21 +191,33 @@ a {
 }
 
 .photo {
-  max-width: 320px;
+  max-width: 400px;
 }
 
-/* ? NAV FOR MEDIUM-LARGE DEVICES. */
+/* ? ============ BREAKPOINTS ============ */
+@media screen and (min-width: 768px) {
+  :root {
+    font-size: 18px;
+  }
+}
+
 @media screen and (min-width: 1023px) {
+  /* ? HEADER */
   .nav_toggle,
   .nav_close {
     display: none;
   }
 
-  .nav_list {
+  .nav_menu {
+    width: initial;
     position: static;
+    backdrop-filter: none;
+    max-width: none;
+    padding: 0;
+  }
+
+  .nav_list {
     flex-direction: row;
-    visibility: visible;
-    justify-content: center;
   }
 
   /* ? HOME SECTION */

@@ -1,16 +1,16 @@
 // ? ==== NAV TOGGLE BUTTONS ===
 const navToggle = document.getElementById("nav-toggle");
 const navClose = document.getElementById("nav-close");
-const navList = document.querySelector(".nav_list");
+const navMenu = document.querySelector(".nav_menu");
 
 navToggle.addEventListener("click", () => {
-  navList.classList.add("nav_active");
+  navMenu.classList.add("nav_active");
   navToggle.style.display = "none"; // ? Oculta el botón de hamburguesa
   navClose.style.display = "block"; // ? Muestra el botón de cierre
 });
 
 navClose.addEventListener("click", () => {
-  navList.classList.remove("nav_active");
+  navMenu.classList.remove("nav_active");
   navToggle.style.display = "block";
   navClose.style.display = "none";
 });
@@ -20,10 +20,10 @@ const desktopMediaQuery = window.matchMedia("(min-width: 1023px)");
 
 desktopMediaQuery.addEventListener("change", (event) => {
   if (event.matches) {
-    navList.classList.remove("nav_active");
+    navMenu.classList.remove("nav_active");
     navToggle.style.display = "none";
     navClose.style.display = "none";
   } else {
-    navToggle.style.display = "block";
+    navToggle.style.display = "flex";
   }
 });
