@@ -27,3 +27,30 @@ desktopMediaQuery.addEventListener("change", (event) => {
     navToggle.style.display = "flex";
   }
 });
+
+// ? PROJECT SECTION CARDS
+const projectsContainer = document.querySelector(".cards_container");
+
+fetch("./projects.json")
+  .then((response) => response.json())
+  .then((projects) => {
+    // * Loop proyectos para renderizar las cards.
+    projects.forEach((project) => {
+      const projectCard = document.createElement("div");
+      projectCard.classList.add("project_card");
+
+      const cardContent = `
+        <img src="${project.thumbnail}" alt="${project.name} Thumbnail">
+        <div>
+          <h3>${project.name}</h3>
+          <p>${project.description}</p>
+        </div>
+      `;
+
+      projectCard.innerHTML = cardContent;
+      projectsContainer.appendChild(projectCard);
+    });
+  })
+  .catch((error) => {
+    console.error("Error loading projects:", error);
+  });
