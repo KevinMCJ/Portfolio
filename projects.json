@@ -1,0 +1,22 @@
+[
+  {
+    "name": "SportZone",
+    "thumbnail": "./assets/images/sportzone thumbnail.png",
+    "description": "lorem ipsum dolor sit amet, con consectetur adipiscing elit in diam",
+    "technologies": [
+      "HTML",
+      "CSS",
+      "JAVASCRIPT",
+      "REACTJS",
+      "REDUX",
+      "NODEJS",
+      "EXPRESS",
+      "SEQUELIZE",
+      "POSTGRESQL",
+      "MERCADOPAGO",
+      "FIREBASE",
+      "JWT",
+      "BCRYPT"
+    ]
+  }
+]
