@@ -20,21 +20,22 @@
           <span> Mamani</span>
         </a>
 
-        <ul class="nav_list">
-          <li class="nav_item"><a href="#" class="nav_link">Home</a></li>
-          <li class="nav_item"><a href="#" class="nav_link">About me</a></li>
-          <li class="nav_item"><a href="#" class="nav_link">Skills</a></li>
-          <li class="nav_item"><a href="#" class="nav_link">Projects</a></li>
-          <li class="nav_item"><a href="#" class="nav_link">Contact</a></li>
-        </ul>
+        <div class="nav_menu">
+          <ul class="nav_list">
+            <li class="nav_item"><a href="#home" class="nav_link">Home</a></li>
+            <li class="nav_item"><a href="#about" class="nav_link">About me</a></li>
+            <li class="nav_item"><a href="#skills" class="nav_link">Skills</a></li>
+            <li class="nav_item"><a href="#projects" class="nav_link">Projects</a></li>
+            <li class="nav_item"><a href="#contact" class="nav_link">Contact</a></li>
+          </ul>
+          <div class="nav_close" id="nav-close">
+            <i class="ri-close-fill"></i>
+          </div>
+        </div>
 
         <!-- * Toggle nav button -->
         <div class="nav_toggle" id="nav-toggle">
           <i class="ri-menu-line"></i>
-        </div>
-
-        <div class="nav_close" id="nav-close">
-          <i class="ri-close-fill"></i>
         </div>
       </nav>
     </header>
@@ -43,13 +44,27 @@
       <!-- * HOME SECTION -->
       <section class="container" id="home">
         <div class="home_container grid">
-          <div class="home_info">
-            <h1>Hello! <span class="title_span">I'm Kevin</span></h1>
-            <h2>A passionate full stack web developer from Argentina</h2>
-            <p>
-              With Knowledge in the PERN stack. I always look for the highest
-              quality in my projects and user satisfaction.
-            </p>
+          <div class="home_content">
+            <div class="home_data">
+              <h3>Hello! <span class="title_span">I'm Kevin</span></h3>
+              <h2>
+                A passionate
+                <span class="title_span">Full stack web developer</span> from
+                Argentina
+              </h2>
+              <p class="home_description">
+                With Knowledge in the PERN stack. I always look for the highest
+                quality in my projects and user satisfaction.
+              </p>
+
+              <a
+                href="./assets/Kevin Mamani Capuma - CV.pdf"
+                download="Kevin-Mamani-Capuma-CV.pdf"
+                class="btnPrimary btnResume"
+              >
+                Download CV
+              </a>
+            </div>
 
             <div class="social">
               <a
@@ -66,13 +81,6 @@
               >
                 <i class="ri-linkedin-box-line"></i>
               </a>
-              <a
-                href="./assets/Kevin Mamani Capuma - CV.pdf"
-                download="Kevin-Mamani-Capuma-CV.pdf"
-                class="btnPrimary"
-              >
-                Download CV
-              </a>
             </div>
           </div>
 
@@ -83,7 +91,6 @@
               class="photo"
             />
           </div>
-
         </div>
       </section>
     </main>
