@@ -4,13 +4,13 @@
 :root {
   --background-color-dark: #172554;
   --background-color-dark-secondary: #1e40af;
+  --background-button-primary: #10b981;
   --text-hover-color: black;
   --text-color-dark: #f8f8f8;
   --text-color-dark-secondary: #312e81;
   --background-color-light: #f1f5f9;
   --background-color-light-secondary: #d4d4d8;
   --text-color-light: #94a3b8;
-  --text-color-light-secondary: #10b981;
 }
 
 /* ? ========== GENERAL STYLES ========= */
@@ -39,6 +39,8 @@ a {
 /* ? ========== REUSABLE CSS CLASSES ========== */
 .container {
   max-width: 1120px;
+  padding: 0.5rem 2rem;
+  margin: 0 auto;
 }
 
 .grid {
@@ -46,9 +48,16 @@ a {
   gap: 1.5rem;
 }
 
+.btnPrimary {
+  padding: 0.5rem 1rem;
+  color: var(--text-color-dark);
+  font-weight: 600;
+  border-radius: 10px;
+  background-color: var(--background-button-primary);
+}
+
 /* ? ========== HEADER ========== */
 .header {
-  position: fixed;
   height: 5rem;
   display: flex;
   align-items: center;
@@ -64,7 +73,6 @@ a {
   font-size: 1.1rem;
   display: flex;
   margin: 0 auto;
-  padding: 0.5rem 2rem;
   justify-content: space-between;
   align-items: center;
   flex: 1;
@@ -123,6 +131,42 @@ a {
   z-index: 10;
 }
 
+/* ? ========== HOME SECTION ========== */
+.home_container {
+  text-align: center;
+  place-items: center;
+}
+
+.home_info {
+  color: var(--text-color-dark);
+}
+
+.title_span {
+  color: var(--background-button-primary);
+}
+
+.social {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.social_icon {
+  color: var(--text-color-dark);
+  font-size: 2rem;
+  background-color: #10b981;
+  width: 48px;
+  height: 48px;
+  border-radius: 999px;
+  display: grid;
+  place-items: center;
+}
+
+.photo {
+  max-width: 320px;
+}
+
 /* ? NAV FOR MEDIUM-LARGE DEVICES. */
 @media screen and (min-width: 1023px) {
   .nav_toggle,
@@ -135,5 +179,15 @@ a {
     flex-direction: row;
     visibility: visible;
     justify-content: center;
+  }
+
+  /* ? HOME SECTION */
+  .home_container {
+    text-align: unset;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .social {
+    justify-content: flex-start;
   }
 }
