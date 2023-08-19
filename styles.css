@@ -27,8 +27,11 @@ body {
   color: var(--text-color-light);
 }
 
-main{
-  padding: 0.9rem 0;
+main {
+  padding: 1rem 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 ul {
@@ -194,9 +197,19 @@ body {
   place-items: center;
 }
 
+.photo_container {
+  background-color: #3d399491;
+  border-radius: 48% 52% 68% 32% / 52% 23% 77% 48%;
+  width: 100%;
+  max-width: 480px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
 .photo {
   width: 100%;
-  max-width: 400px;
 }
 
 /* ? ============ BREAKPOINTS ============ */
@@ -231,7 +244,7 @@ body {
     grid-template-columns: 1fr 1fr;
   }
 
-  .home_content{
+  .home_content {
     height: unset;
   }
 
