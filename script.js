@@ -52,7 +52,7 @@ fetch("./projects.json")
 
       const cardContent = `
         <img src="${project.thumbnail}" alt="${project.name} Thumbnail">
-        <div>
+        <div class="project_data">
           <h3>${project.name}</h3>
           <p>${project.description}</p>
         </div>
