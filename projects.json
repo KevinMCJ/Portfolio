@@ -1,7 +1,7 @@
 [
   {
     "name": "SportZone",
-    "thumbnail": "./assets/images/sportzone thumbnail.png",
+    "thumbnail": "./assets/images/sportzone_thumbnail.png",
     "description": "lorem ipsum dolor sit amet, con consectetur adipiscing elit in diam",
     "technologies": [
       "HTML",
@@ -17,6 +17,22 @@
       "FIREBASE",
       "JWT",
       "BCRYPT"
+    ]
+  },
+  {
+    "name": "GameDex",
+    "thumbnail": "./assets/images/gamedex_thumbnail.png",
+    "description": "lorem ipsum dolor sit amet, con consectetur adipiscing elit in diam",
+    "technologies": [
+      "HTML",
+      "CSS",
+      "JAVASCRIPT",
+      "REACTJS",
+      "REDUX",
+      "NODEJS",
+      "EXPRESS",
+      "SEQUELIZE",
+      "POSTGRESQL"
     ]
   }
 ]
