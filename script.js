@@ -28,6 +28,17 @@ desktopMediaQuery.addEventListener("change", (event) => {
   }
 });
 
+// ? ==== CAMBIAR EL HEADER A FIXED CON BLUR AL SCROLLEAR
+const scrollHeader = () => {
+  const header = document.getElementById("header");
+  // * Cuando el scroll sea mayor al 50 del viewport height, añadimos la clase scroll-header al header.
+  this.scrollY >= 50
+    ? header.classList.add("scroll-header")
+    : header.classList.remove("scroll-header");
+};
+
+window.addEventListener("scroll", scrollHeader);
+
 // ? PROJECT SECTION CARDS
 const projectsContainer = document.querySelector(".cards_container");
 
