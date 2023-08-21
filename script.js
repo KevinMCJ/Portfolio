@@ -50,11 +50,23 @@ fetch("./projects.json")
       const projectCard = document.createElement("div");
       projectCard.classList.add("project_card");
 
+      const technologiesList = project.technologies
+        .map((technology) => {
+          return `<li class="tech_item">
+            <img
+            src=${technology.icon}
+            alt="${technology.name} icon"
+          />
+            <p>${technology.name}</p>
+            </li>`;
+        })
+        .join(""); // Convertir el array de strings en una cadena
+
       const cardContent = `
         <img src="${project.thumbnail}" alt="${project.name} Thumbnail">
         <div class="project_data">
           <h3>${project.name}</h3>
-          <p>${project.description}</p>
+          <ul class="technology_list">${technologiesList}</ul>
         </div>
       `;
 
