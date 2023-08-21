@@ -4,19 +4,58 @@
     "thumbnail": "./assets/images/sportzone_thumbnail.png",
     "description": "lorem ipsum dolor sit amet, con consectetur adipiscing elit in diam",
     "technologies": [
-      "HTML",
-      "CSS",
-      "JAVASCRIPT",
-      "REACTJS",
-      "REDUX",
-      "NODEJS",
-      "EXPRESS",
-      "SEQUELIZE",
-      "POSTGRESQL",
-      "MERCADOPAGO",
-      "FIREBASE",
-      "JWT",
-      "BCRYPT"
+      {
+        "name": "HTML",
+        "icon": "./assets/icons/html.svg"
+      },
+      {
+        "name": "CSS",
+        "icon": "./assets/icons/css.svg"
+      },
+      {
+        "name": "JAVASCRIPT",
+        "icon": "./assets/icons/javascript.svg"
+      },
+      {
+        "name": "REACTJS",
+        "icon": "./assets/icons/react.svg"
+      },
+      {
+        "name": "REDUX",
+        "icon": "./assets/icons/redux.svg"
+      },
+      {
+        "name": "NODEJS",
+        "icon": "./assets/icons/nodejs.svg"
+      },
+      {
+        "name": "EXPRESS",
+        "icon": "./assets/icons/express-js.svg"
+      },
+      {
+        "name": "SEQUELIZE",
+        "icon": "./assets/icons/sequelize.svg"
+      },
+      {
+        "name": "POSTGRESQL",
+        "icon": "./assets/icons/postgresql.svg"
+      },
+      {
+        "name": "MERCADOPAGO",
+        "icon": "./assets/icons/mercado-pago.svg"
+      },
+      {
+        "name": "FIREBASE",
+        "icon": "./assets/icons/firebase.svg"
+      },
+      {
+        "name": "JWT",
+        "icon": "./assets/icons/jwt.svg"
+      },
+      {
+        "name": "BCRYPT",
+        "icon": "./assets/icons/key.svg"
+      }
     ]
   },
   {
@@ -24,15 +63,42 @@
     "thumbnail": "./assets/images/gamedex_thumbnail.png",
     "description": "lorem ipsum dolor sit amet, con consectetur adipiscing elit in diam",
     "technologies": [
-      "HTML",
-      "CSS",
-      "JAVASCRIPT",
-      "REACTJS",
-      "REDUX",
-      "NODEJS",
-      "EXPRESS",
-      "SEQUELIZE",
-      "POSTGRESQL"
+      {
+        "name": "HTML",
+        "icon": "./assets/icons/html.svg"
+      },
+      {
+        "name": "CSS",
+        "icon": "./assets/icons/css.svg"
+      },
+      {
+        "name": "JAVASCRIPT",
+        "icon": "./assets/icons/javascript.svg"
+      },
+      {
+        "name": "REACTJS",
+        "icon": "./assets/icons/react.svg"
+      },
+      {
+        "name": "REDUX",
+        "icon": "./assets/icons/redux.svg"
+      },
+      {
+        "name": "NODEJS",
+        "icon": "./assets/icons/nodejs.svg"
+      },
+      {
+        "name": "EXPRESS",
+        "icon": "./assets/icons/express-js.svg"
+      },
+      {
+        "name": "SEQUELIZE",
+        "icon": "./assets/icons/sequelize.svg"
+      },
+      {
+        "name": "POSTGRESQL",
+        "icon": "./assets/icons/postgresql.svg"
+      }
     ]
   }
 ]
