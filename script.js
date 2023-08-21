@@ -63,7 +63,7 @@ fetch("./projects.json")
         .join(""); // Convertir el array de strings en una cadena
 
       const cardContent = `
-        <img src="${project.thumbnail}" alt="${project.name} Thumbnail">
+        <img src="${project.thumbnail}" alt="${project.name} Thumbnail" class="project_thumbnail">
         <div class="project_data">
           <h3>${project.name}</h3>
           <ul class="technology_list">${technologiesList}</ul>
