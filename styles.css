@@ -383,6 +383,12 @@ body {
 }
 
 /* ? ============ BREAKPOINTS ============ */
+@media screen and (max-width: 420px) {
+  .data_header{
+    flex-direction: column;
+  }
+}
+
 @media screen and (min-width: 768px) {
   :root {
     font-size: 18px;
