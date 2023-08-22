@@ -382,6 +382,18 @@ body {
   letter-spacing: 2px;
 }
 
+/* ? ========== FOOTER ========== */
+.footer{
+  background-color: #050711;
+  padding: 1rem;
+}
+
+.footer p {
+  font-size: 1.5rem;
+  font-weight: 600;
+  text-align: center;
+}
+
 /* ? ============ BREAKPOINTS ============ */
 @media screen and (max-width: 420px) {
   .data_header{
