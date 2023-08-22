@@ -2,7 +2,8 @@
   {
     "name": "SportZone",
     "thumbnail": "./assets/images/sportzone_thumbnail.png",
-    "description": "lorem ipsum dolor sit amet, con consectetur adipiscing elit in diam",
+    "description": "E-commerce of sports articles. </br> A group project in which I played a key role in the front-end. </br></br>[ Some of the most important tasks I carried out ] </br>- Formulating forms for both the client and admin using Formik/Yup </br>- Shopping cart feature of the application </br>- Authentication with Google and Facebook via Firebase </br> - Product details with image carousel </br>- Questions and answers section",
+    "url": "https://frontsportzone.onrender.com/",
     "technologies": [
       {
         "name": "HTML",
@@ -62,6 +63,7 @@
     "name": "GameDex",
     "thumbnail": "./assets/images/gamedex_thumbnail.png",
     "description": "lorem ipsum dolor sit amet, con consectetur adipiscing elit in diam",
+    "url": "https://pi-videogames-front-production-b21d.up.railway.app/",
     "technologies": [
       {
         "name": "HTML",
