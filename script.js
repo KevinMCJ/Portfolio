@@ -53,19 +53,30 @@ fetch("./projects.json")
       const technologiesList = project.technologies
         .map((technology) => {
           return `<li class="tech_item">
-            <img
-            src=${technology.icon}
-            alt="${technology.name} icon"
-          />
-            <p>${technology.name}</p>
+              <img
+              src=${technology.icon}
+              alt="${technology.name} icon"
+              />
+              <p>${technology.name}</p>
             </li>`;
         })
         .join(""); // Convertir el array de strings en una cadena
 
       const cardContent = `
-        <img src="${project.thumbnail}" alt="${project.name} Thumbnail" class="project_thumbnail">
+          <div class="project_thumbnail_container">
+          <img src="${project.thumbnail}" alt="${project.name} Thumbnail" class="project_thumbnail">
+          <div class="project_description">
+            <p>${project.description}</p>
+          </div>
+        </div>
         <div class="project_data">
-          <h3>${project.name}</h3>
+          <div class="data_header"> 
+            <h3>${project.name}</h3> 
+            <a href=${project?.url} target="_blank" class="project_link">
+              Deploy 
+              <img src="./assets/icons/arrow-diagonal.svg" alt="Diagonal arrow" class="deploy_arrow">
+            </a> 
+          </div>
           <ul class="technology_list">${technologiesList}</ul>
         </div>
       `;

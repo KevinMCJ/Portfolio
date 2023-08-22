@@ -46,6 +46,25 @@ body {
   font-family: inherit;
 }
 
+::-webkit-scrollbar {
+  height: 5px;
+  width: 5px;
+  background-color: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #b7ace68c;
+  border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb:active {
+  background-color: #a050d6;
+}
+
+::-webkit-scrollbar-corner{
+  background: transparent;
+}
+
 /* ? ========== REUSABLE CSS CLASSES ========== */
 .container {
   max-width: 1120px;
@@ -251,18 +270,86 @@ body {
   max-width: 100%;
 }
 
+.project_thumbnail_container {
+  position: relative;
+}
+
 .project_thumbnail {
+  object-fit: cover;
   max-width: 100%;
   max-height: 100%;
 }
 
+.project_description {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: calc(100% - 0.38rem);
+  padding: 1rem;
+  background-color: rgba(2, 0, 15, 0.95);
+  overflow: scroll;
+  color: white;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.3s, visibility 0.3s;
+}
+
+.project_thumbnail_container:hover .project_description {
+  opacity: 1;
+  visibility: visible;
+}
+
 .project_data {
-  padding: 10px;
+  padding: 0px 0.5rem 1rem 0.5rem;
+}
+
+.data_header{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 5px;
+  font-size: 1.2rem;
+}
+
+.project_link{
+  display: flex;
+  gap: 0.5rem;
+  align-items: center;
+  color: #e5cfff;
+  font-weight: 600;
+  text-transform: uppercase;
+  position: relative;
+}
+
+.deploy_arrow{
+  width: 20px;
+  transition: all 0.3s ease;
+}
+
+.project_link::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 3px; 
+  background-color: #e5cfff; 
+  bottom: 0px;
+  left: 0;
+  transform: scaleX(0); /* * Inicialmente, la línea de subrayado está oculta */
+  transform-origin: center;
+  transition: transform 0.3s ease;
+}
+
+.project_link:hover::before {
+  transform: scaleX(1); /* * Mostrar el subrayado al pasar el mouse sobre el enlace */
+}
+
+.project_link:hover .deploy_arrow{
+  transform: scale(1.5);
 }
 
 .project_data h3 {
-  margin-bottom: 5px;
-  font-size: 1.2rem;
+  letter-spacing: 2px;
   text-transform: uppercase;
 }
 
