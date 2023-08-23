@@ -78,7 +78,8 @@ body {
 }
 
 .title_section {
-  color: var(--background-button-primary);
+  color: hsla(167, 73%, 49%, 0.945);
+  text-shadow: 0px 4px 2px rgb(4, 1, 29);
   font-size: 1.8rem;
   font-weight: 800;
   text-align: center;
