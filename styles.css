@@ -99,6 +99,10 @@ body {
   width: fit-content;
 }
 
+.appButton:hover{
+  box-shadow: 0px 3px 20px rgb(1, 27, 16);
+}
+
 /* ************************* MOBILE FIRST ************************* */
 
 /* ? ========== HEADER ========== */
@@ -406,7 +410,12 @@ body {
   background-color: #11183d;
   color: var(--background-color-light);
   outline: none;
-  border: none;
+  border: 3px solid transparent;
+  transition: border .08s linear; 
+}
+
+.contact_input:focus{
+  border-color: #4050a0;
 }
 
 .contact_input::placeholder{
