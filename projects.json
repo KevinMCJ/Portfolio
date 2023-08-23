@@ -2,7 +2,7 @@
   {
     "name": "SportZone",
     "thumbnail": "./assets/images/sportzone_thumbnail.png",
-    "description": "E-commerce of sports articles. </br> A group project in which I played a key role in the front-end. </br></br>[ Some of the most important tasks I carried out ] </br>- Formulating forms for both the client and admin using Formik/Yup </br>- Shopping cart feature of the application </br>- Authentication with Google and Facebook via Firebase </br> - Product details with image carousel </br>- Questions and answers section",
+    "description": "E-commerce de artículos deportivos. </br> Proyecto grupal en el que desempeñé un papel clave en el front-end. </br></br>[ Algunas de las tareas más importantes que llevé a cabo ] </br>- Creación de los formularios necesarios para el cliente y administrador utilizando Formik/Yup. </br>- Carrito de compras de la aplicación. (uso de localStorage para usuarios no clientes)</br>- Autenticación con Google y Facebook a través de Firebase. </br> - Barra de búsqueda de la aplicación que incluye una lista de sugerencias. </br> - Detalles del producto con carrusel de imágenes. </br>- Sección de preguntas y respuestas. </br> - Tarjeta de los productos.",
     "url": "https://frontsportzone.onrender.com/",
     "technologies": [
       {
@@ -62,7 +62,7 @@
   {
     "name": "GameDex",
     "thumbnail": "./assets/images/gamedex_thumbnail.png",
-    "description": "lorem ipsum dolor sit amet, con consectetur adipiscing elit in diam",
+    "description": "Proyecto interactivo e informativo sobre videojuegos que consume la API RAWG. </br></br> - Diseñe la aplicación utilizando Figma siguiendo practicas UX/UI. </br> - Desarrollé una API RESTful robusta que permitió una comunicación segura y eficiente entre el cliente y servidor. </br> - Creación y gestión de la base de datos en PostgreSQL, asegurando un almacenamiento y recuperación eficiente de los datos necesarios para la aplicación. </br> - Formularios con estilos adaptativos </br> - Borrado y edición de juegos creados. </br> - Alertas y confirmación utilizando SweetAlert2",
     "url": "https://pi-videogames-front-production-b21d.up.railway.app/",
     "technologies": [
       {
