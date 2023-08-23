@@ -61,7 +61,7 @@ body {
   background-color: #a050d6;
 }
 
-::-webkit-scrollbar-corner{
+::-webkit-scrollbar-corner {
   background: transparent;
 }
 
@@ -232,8 +232,8 @@ body {
   color: var(--text-color-dark);
   font-size: 2rem;
   background-color: #10b981;
-  width: 48px;
-  height: 48px;
+  width: 3rem;
+  height: 3rem;
   border-radius: 999px;
   display: grid;
   place-items: center;
@@ -304,7 +304,7 @@ body {
   padding: 0px 0.5rem 1rem 0.5rem;
 }
 
-.data_header{
+.data_header {
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -312,7 +312,7 @@ body {
   font-size: 1.2rem;
 }
 
-.project_link{
+.project_link {
   display: flex;
   gap: 0.5rem;
   align-items: center;
@@ -322,7 +322,7 @@ body {
   position: relative;
 }
 
-.deploy_arrow{
+.deploy_arrow {
   width: 20px;
   transition: all 0.3s ease;
 }
@@ -331,8 +331,8 @@ body {
   content: "";
   position: absolute;
   width: 100%;
-  height: 3px; 
-  background-color: #e5cfff; 
+  height: 3px;
+  background-color: #e5cfff;
   bottom: 0px;
   left: 0;
   transform: scaleX(0); /* * Inicialmente, la línea de subrayado está oculta */
@@ -341,10 +341,12 @@ body {
 }
 
 .project_link:hover::before {
-  transform: scaleX(1); /* * Mostrar el subrayado al pasar el mouse sobre el enlace */
+  transform: scaleX(
+    1
+  ); /* * Mostrar el subrayado al pasar el mouse sobre el enlace */
 }
 
-.project_link:hover .deploy_arrow{
+.project_link:hover .deploy_arrow {
   transform: scale(1.5);
 }
 
@@ -382,8 +384,54 @@ body {
   letter-spacing: 2px;
 }
 
+/* ? ========== CONTACT SECTION ========== */
+.contact_container {
+  display: grid;
+  place-items: center;
+  gap: 1.5rem;
+}
+
+.contact_form, .contact_group {
+  display: grid;
+  gap: 1rem;
+  width: 100%;
+}
+
+.contact_input{
+  font-size: 1rem;
+  width: 100%;
+  padding: 1rem 1.25rem;
+  border-radius: 0.5rem;
+  background-color: #11183d;
+  color: var(--background-color-light);
+  outline: none;
+  border: none;
+}
+
+.contact_input::placeholder{
+  color: #9099c9;
+}
+
+.contact_form textarea {
+  height: 11rem;
+  resize: none;
+}
+
+.btnSubmit {
+  justify-self: center;
+  border: none;
+  cursor: pointer;
+  padding: 0.5rem 1rem;
+  color: var(--text-color-dark);
+  font-size: 1rem;
+  font-weight: 600;
+  border-radius: 10px;
+  background-color: var(--background-button-primary);
+  width: fit-content;
+}
+
 /* ? ========== FOOTER ========== */
-.footer{
+.footer {
   background-color: #050711;
   padding: 1rem;
 }
@@ -395,8 +443,14 @@ body {
 }
 
 /* ? ============ BREAKPOINTS ============ */
+@media screen and (max-width: 280px){
+  :root{
+    font-size: 1vh;
+  }
+}
+
 @media screen and (max-width: 420px) {
-  .data_header{
+  .data_header {
     flex-direction: column;
   }
 }
