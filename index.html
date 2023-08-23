@@ -22,18 +22,18 @@
 
         <div class="nav_menu">
           <ul class="nav_list">
-            <li class="nav_item"><a href="#home" class="nav_link">Home</a></li>
+            <li class="nav_item"><a href="#home" class="nav_link">Inicio</a></li>
             <li class="nav_item">
-              <a href="#about" class="nav_link">About me</a>
+              <a href="#about" class="nav_link">Sobre mi</a>
             </li>
             <li class="nav_item">
-              <a href="#skills" class="nav_link">Skills</a>
+              <a href="#skills" class="nav_link">Habilidades</a>
             </li>
             <li class="nav_item">
-              <a href="#projects" class="nav_link">Projects</a>
+              <a href="#projects" class="nav_link">Proyectos</a>
             </li>
             <li class="nav_item">
-              <a href="#contact" class="nav_link">Contact</a>
+              <a href="#contact" class="nav_link">Contacto</a>
             </li>
           </ul>
           <div class="nav_close" id="nav-close">
@@ -54,15 +54,13 @@
         <div class="home_container grid">
           <div class="home_content">
             <div class="home_data">
-              <h3>Hello! <span class="title_span">I'm Kevin</span></h3>
+              <h3>Hola! <span class="title_span">Soy Kevin</span></h3>
               <h2>
-                A passionate
-                <span class="title_span">Full stack web developer</span> from
-                Argentina
+                Apasionado
+                <span class="title_span">Full stack web developer</span> de Argentina
               </h2>
               <p class="home_description">
-                With Knowledge in the PERN stack. I always look for the highest
-                quality in my projects and user satisfaction.
+                Con conocimiento en el stack PERN. Siempre busco la mejor calidad en mis proyectos y la satisfacción del usuario.
               </p>
 
               <a
@@ -70,7 +68,7 @@
                 download="Kevin-Mamani-Capuma-CV.pdf"
                 class="btnPrimary btnResume"
               >
-                Download Resume
+                Descargar CV
               </a>
             </div>
 
@@ -103,41 +101,41 @@
       </section>
       <!-- * PROJECTS SECTION -->
       <section class="container" id="projects">
-        <h2 class="title_section">PROJECTS</h2>
+        <h2 class="title_section">PROYECTOS</h2>
         <div class="cards_container">
           <!-- ? Los proyectos serán agregados dinámicamente -->
         </div>
       </section>
       <!-- * CONTACT SECTION -->
       <section class="container" id="contact">
-        <h2 class="title_section">CONTACT</h2>
+        <h2 class="title_section">CONTACTO</h2>
         <div class="contact_container">
           <form action="" class="contact_form" id="contact-form">
             <div class="contact_group">
               <input
                 type="text"
-                name="name"
+                name="user_name"
                 required
-                placeholder="Enter your name"
+                placeholder="Ingrese su nombre"
                 class="contact_input"
               />
               <input
                 type="email"
-                name="email"
+                name="user_email"
                 required
-                placeholder="Enter your email"
+                placeholder="Ingrese su email"
                 class="contact_input"
               />
               <textarea
-                name="message"
+                name="user_message"
                 required
-                placeholder="Enter your message"
+                placeholder="Mensaje"
                 cols="30"
                 rows="10"
                 class="contact_input"
               ></textarea>
               <p class="contact_message" id="contact-message"></p>
-              <button type="submit" class="btnSubmit">Send Message</button>
+              <button type="submit" class="btnSubmit">Enviar mensaje</button>
             </div>
           </form>
         </div>
@@ -145,8 +143,11 @@
     </main>
 
     <footer class="footer">
-      <p>SITE IN DEVELOPMENT</p>
+      <p>SITIO EN DESARROLLO</p>
     </footer>
+
+    <!-- * EMAILJS -->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
     <script src="./script.js"></script>
   </body>
 </html>
