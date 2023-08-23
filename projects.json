@@ -26,6 +26,14 @@
         "icon": "./assets/icons/redux.svg"
       },
       {
+        "name": "FORMIK",
+        "icon": "./assets/icons/formik.svg"
+      },
+      {
+        "name": "YUP",
+        "icon": "./assets/icons/default-tech.svg"
+      },
+      {
         "name": "NODEJS",
         "icon": "./assets/icons/nodejs.svg"
       },
