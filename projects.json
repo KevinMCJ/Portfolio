@@ -70,7 +70,7 @@
   {
     "name": "GameDex",
     "thumbnail": "./assets/images/gamedex_thumbnail.png",
-    "description": "Proyecto interactivo e informativo sobre videojuegos que consume la API RAWG. </br></br> - Diseñe la aplicación utilizando Figma siguiendo practicas UX/UI. </br> - Desarrollé una API RESTful robusta que permitió una comunicación segura y eficiente entre el cliente y servidor. </br> - Creación y gestión de la base de datos en PostgreSQL, asegurando un almacenamiento y recuperación eficiente de los datos necesarios para la aplicación. </br> - Formularios con estilos adaptativos </br> - Borrado y edición de juegos creados. </br> - Alertas y confirmación utilizando SweetAlert2",
+    "description": "Proyecto interactivo e informativo sobre videojuegos que consume la API RAWG. </br></br> - Diseño responsive con el uso de Figma siguiendo practicas UX/UI. </br> - Desarrollé una API RESTful robusta que permitió una comunicación segura y eficiente entre el cliente y servidor. </br> - Creación y gestión de la base de datos en PostgreSQL, asegurando un almacenamiento y recuperación eficiente de los datos necesarios para la aplicación. </br> - Formularios con estilos adaptativos </br> - Borrado y edición de juegos creados. </br> - Alertas y confirmación utilizando SweetAlert2",
     "url": "https://pi-videogames-front-production-b21d.up.railway.app/",
     "technologies": [
       {
