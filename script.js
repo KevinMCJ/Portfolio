@@ -88,3 +88,27 @@ fetch("./projects.json")
   .catch((error) => {
     console.error("Error loading projects:", error);
   });
+
+// ? EMAIL JS
+const contactForm = document.getElementById("contact-form");
+const contactMessage = document.getElementById("contact-message");
+
+const sendEmail = (event) => {
+  event.preventDefault();
+
+  emailjs.sendForm("service_al4s88w", "template_dkcuepq", "#contact-form", "yU3_8TWzwVNLZNd1L")
+    .then(() => {
+      contactMessage.textContent = "Mensaje enviado correctamente ✅";
+      
+      // * Después de 5 segundos elimina el mensaje del submit.
+      setTimeout(() => {
+        contactMessage.textContent = "";
+      }, 5000);
+
+      contactForm.reset();
+    }, () => {
+      contactMessage.textContent = "No se ha enviado el mensaje (error de servicio) ❌"
+    })
+};
+
+contactForm.addEventListener("submit", sendEmail);
