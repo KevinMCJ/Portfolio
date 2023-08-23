@@ -23,10 +23,18 @@
         <div class="nav_menu">
           <ul class="nav_list">
             <li class="nav_item"><a href="#home" class="nav_link">Home</a></li>
-            <li class="nav_item"><a href="#about" class="nav_link">About me</a></li>
-            <li class="nav_item"><a href="#skills" class="nav_link">Skills</a></li>
-            <li class="nav_item"><a href="#projects" class="nav_link">Projects</a></li>
-            <li class="nav_item"><a href="#contact" class="nav_link">Contact</a></li>
+            <li class="nav_item">
+              <a href="#about" class="nav_link">About me</a>
+            </li>
+            <li class="nav_item">
+              <a href="#skills" class="nav_link">Skills</a>
+            </li>
+            <li class="nav_item">
+              <a href="#projects" class="nav_link">Projects</a>
+            </li>
+            <li class="nav_item">
+              <a href="#contact" class="nav_link">Contact</a>
+            </li>
           </ul>
           <div class="nav_close" id="nav-close">
             <i class="ri-close-fill"></i>
@@ -93,11 +101,45 @@
           </div>
         </div>
       </section>
-
+      <!-- * PROJECTS SECTION -->
       <section class="container" id="projects">
         <h2 class="title_section">PROJECTS</h2>
         <div class="cards_container">
           <!-- ? Los proyectos serán agregados dinámicamente -->
+        </div>
+      </section>
+      <!-- * CONTACT SECTION -->
+      <section class="container" id="contact">
+        <h2 class="title_section">CONTACT</h2>
+        <div class="contact_container">
+          <form action="" class="contact_form" id="contact-form">
+            <div class="contact_group">
+              <input
+                type="text"
+                name="name"
+                required
+                placeholder="Enter your name"
+                class="contact_input"
+              />
+              <input
+                type="email"
+                name="email"
+                required
+                placeholder="Enter your email"
+                class="contact_input"
+              />
+              <textarea
+                name="message"
+                required
+                placeholder="Enter your message"
+                cols="30"
+                rows="10"
+                class="contact_input"
+              ></textarea>
+              <p class="contact_message" id="contact-message"></p>
+              <button type="submit" class="btnSubmit">Send Message</button>
+            </div>
+          </form>
         </div>
       </section>
     </main>
