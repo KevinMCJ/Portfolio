@@ -2,7 +2,7 @@
   {
     "name": "SportZone",
     "thumbnail": "./assets/images/sportzone_thumbnail.png",
-    "description": "E-commerce de artículos deportivos. </br> Proyecto grupal en el que desempeñé un papel clave en el front-end. </br></br>[ Algunas de las tareas más importantes que llevé a cabo ] </br>- Creación de los formularios necesarios para el cliente y administrador utilizando Formik/Yup. </br>- Carrito de compras de la aplicación. (uso de localStorage para usuarios no clientes)</br>- Autenticación con Google y Facebook a través de Firebase. </br> - Barra de búsqueda de la aplicación que incluye una lista de sugerencias. </br> - Detalles del producto con carrusel de imágenes. </br>- Sección de preguntas y respuestas. </br> - Tarjeta de los productos.",
+    "description": "E-commerce de artículos deportivos. </br> Proyecto grupal en el que desempeñé un papel clave en el front-end. </br></br>[ Algunas de las tareas más importantes que llevé a cabo ] </br>- Creación de los formularios necesarios para el cliente y administrador utilizando Formik/Yup. </br>- Carrito de compras de la aplicación. (uso de localStorage para usuarios no clientes)</br>- Autenticación de terceros con Google y Facebook a través de Firebase. </br> - Barra de búsqueda de la aplicación que incluye una lista de sugerencias. </br> - Detalle de producto con carrusel de imágenes. </br>- Sección de preguntas y respuestas. </br> - Barra de navegación. </br> - Tarjeta de los productos.",
     "url": "https://frontsportzone.onrender.com/",
     "technologies": [
       {
@@ -70,8 +70,52 @@
   {
     "name": "GameDex",
     "thumbnail": "./assets/images/gamedex_thumbnail.png",
-    "description": "Proyecto interactivo e informativo sobre videojuegos que consume la API RAWG. </br></br> - Diseño responsive con el uso de Figma siguiendo practicas UX/UI. </br> - Desarrollé una API RESTful robusta que permitió una comunicación segura y eficiente entre el cliente y servidor. </br> - Creación y gestión de la base de datos en PostgreSQL, asegurando un almacenamiento y recuperación eficiente de los datos necesarios para la aplicación. </br> - Formularios con estilos adaptativos </br> - Borrado y edición de juegos creados. </br> - Alertas y confirmación utilizando SweetAlert2",
+    "description": "Proyecto interactivo e informativo sobre videojuegos que consume la API RAWG. </br></br> - Diseño responsive con el uso de Figma siguiendo prácticas UX/UI. </br> - Desarrollé una API RESTful robusta que permitió una comunicación segura y eficiente entre el cliente y servidor. </br> - Creación y gestión de la base de datos en PostgreSQL, asegurando un almacenamiento y recuperación eficiente de los datos necesarios para la aplicación. </br> - Formularios con estilos adaptativos. </br> - Borrado y edición de juegos creados. </br> - Paginación intuitiva y dinámica. </br> - Filtros combinados. </br> - Alertas y confirmaciónes utilizando SweetAlert2.",
     "url": "https://pi-videogames-front-production-b21d.up.railway.app/",
+    "technologies": [
+      {
+        "name": "HTML",
+        "icon": "./assets/icons/html.svg"
+      },
+      {
+        "name": "CSS",
+        "icon": "./assets/icons/css.svg"
+      },
+      {
+        "name": "JAVASCRIPT",
+        "icon": "./assets/icons/javascript.svg"
+      },
+      {
+        "name": "REACTJS",
+        "icon": "./assets/icons/react.svg"
+      },
+      {
+        "name": "REDUX",
+        "icon": "./assets/icons/redux.svg"
+      },
+      {
+        "name": "NODEJS",
+        "icon": "./assets/icons/nodejs.svg"
+      },
+      {
+        "name": "EXPRESS",
+        "icon": "./assets/icons/express-js.svg"
+      },
+      {
+        "name": "SEQUELIZE",
+        "icon": "./assets/icons/sequelize.svg"
+      },
+      {
+        "name": "POSTGRESQL",
+        "icon": "./assets/icons/postgresql.svg"
+      }
+    ]
+  },
+  {
+    "name": "Rick and morty",
+    "thumbnail": "./assets/images/rickandmorty2.png",
+    "description": "Rick and morty APP. </br></br> - API Restful para Usuarios y Favoritos. </br> - Autenticación por email y contraseña. </br> - Ordenamiento de favoritos por nombre y filtro de género. </br> - Almacenamiento de favoritos para cada usuario. </br> - Diseños distintos para las vistas. </br> - Alertas utilizando SweetAlert2.",
+    "url": "https://github.com/KevinMCJ/rick_and_morty_app",
     "technologies": [
       {
         "name": "HTML",
