@@ -39,6 +39,23 @@ const scrollHeader = () => {
 
 window.addEventListener("scroll", scrollHeader);
 
+// * Cambio comportamiento de los anchor. [Posición]
+document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
+  anchor.addEventListener("click", (event) => {
+    event.preventDefault();
+
+    let target = document.querySelector(anchor.getAttribute("href")); // Usar anchor en lugar de this
+    let headerOffset = window.scrollY >= 50 ? 80 : 165;
+    let elementPosition = target.offsetTop;
+    let offsetPosition = elementPosition - headerOffset;
+
+    window.scrollTo({
+      top: offsetPosition,
+      behavior: "smooth",
+    });
+  });
+});
+
 // ? PROJECT SECTION CARDS
 const projectsContainer = document.querySelector(".cards_container");
 
@@ -96,19 +113,29 @@ const contactMessage = document.getElementById("contact-message");
 const sendEmail = (event) => {
   event.preventDefault();
 
-  emailjs.sendForm("service_al4s88w", "template_dkcuepq", "#contact-form", "yU3_8TWzwVNLZNd1L")
-    .then(() => {
-      contactMessage.textContent = "Mensaje enviado correctamente ✅";
-      
-      // * Después de 5 segundos elimina el mensaje del submit.
-      setTimeout(() => {
-        contactMessage.textContent = "";
-      }, 5000);
+  emailjs
+    .sendForm(
+      "service_al4s88w",
+      "template_dkcuepq",
+      "#contact-form",
+      "yU3_8TWzwVNLZNd1L"
+    )
+    .then(
+      () => {
+        contactMessage.textContent = "Mensaje enviado correctamente ✅";
 
-      contactForm.reset();
-    }, () => {
-      contactMessage.textContent = "No se ha enviado el mensaje (error de servicio) ❌"
-    })
+        // * Después de 5 segundos elimina el mensaje del submit.
+        setTimeout(() => {
+          contactMessage.textContent = "";
+        }, 5000);
+
+        contactForm.reset();
+      },
+      () => {
+        contactMessage.textContent =
+          "No se ha enviado el mensaje (error de servicio) ❌";
+      }
+    );
 };
 
 contactForm.addEventListener("submit", sendEmail);
