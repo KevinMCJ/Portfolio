@@ -279,6 +279,10 @@ body {
   position: relative;
 }
 
+.project_data {
+  padding: 0px 0.5rem 1rem 0.5rem;
+}
+
 .project_thumbnail {
   object-fit: cover;
   max-width: 100%;
@@ -303,10 +307,6 @@ body {
 .project_thumbnail_container:hover .project_description {
   opacity: 1;
   visibility: visible;
-}
-
-.project_data {
-  padding: 0px 0.5rem 1rem 0.5rem;
 }
 
 .data_header {
@@ -357,6 +357,7 @@ body {
 
 .project_data h3 {
   letter-spacing: 2px;
+  text-align: center;
   text-transform: uppercase;
 }
 
