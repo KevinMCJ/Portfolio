@@ -72,8 +72,8 @@ fetch("./projects.json")
         <div class="project_data">
           <div class="data_header"> 
             <h3>${project.name}</h3> 
-            <a href=${project?.url} target="_blank" class="project_link">
-              Deploy 
+            <a href=${project.link?.url} target="_blank" class="project_link">
+              ${project.link?.type}
               <img src="./assets/icons/arrow-diagonal.svg" alt="Diagonal arrow" class="deploy_arrow">
             </a> 
           </div>
