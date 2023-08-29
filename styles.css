@@ -99,7 +99,7 @@ body {
   width: fit-content;
 }
 
-.appButton:hover{
+.appButton:hover:not(:disabled){
   box-shadow: 0px 3px 20px rgb(1, 27, 16);
 }
 
@@ -442,6 +442,11 @@ body {
   border-radius: 10px;
   background-color: var(--background-button-primary);
   width: fit-content;
+}
+
+.btnSubmit:disabled{
+  background-color: #64a18d;
+  cursor: not-allowed;
 }
 
 /* ? ========== FOOTER ========== */
