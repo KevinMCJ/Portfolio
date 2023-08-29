@@ -107,11 +107,50 @@ fetch("./projects.json")
   });
 
 // ? EMAIL JS
+const emailInput = document.querySelector('input[name="user_email"]');
 const contactForm = document.getElementById("contact-form");
 const contactMessage = document.getElementById("contact-message");
 
+// * Función para validar un email.
+const isValidEmail = (email) => {
+  const emailRegex = /^[^ ]+@[^ ]+\.[a-z]{2,3}$/;
+  return emailRegex.test(email.trim());
+};
+
+// ? Validación de campos
+const nameInput = document.querySelector('input[name="user_name"]');
+const messageInput = document.querySelector('textarea[name="user_message"]');
+const submitButton = document.querySelector('button[type="submit"]');
+
+submitButton.disabled = true;
+
+const validateForm = () => {
+  const isValidName = nameInput.value.trim() !== "";
+  const isEmailValid = isValidEmail(emailInput.value);
+  const isValidMessage = messageInput.value.trim() !== "";
+
+  submitButton.disabled = !isValidName || !isEmailValid || !isValidMessage;
+};
+
+nameInput.addEventListener("input", validateForm);
+messageInput.addEventListener("input", validateForm);
+emailInput.addEventListener("input", validateForm);
+
+// ? Validación con mensaje de error en tiempo real.
+emailInput.addEventListener("input", (e) => {
+  if (!isValidEmail(e.target.value)) {
+    contactMessage.textContent = "Por favor, ingrese un email válido.";
+    contactMessage.style.color = "#ff2929";
+  } else {
+    contactMessage.textContent = "";
+    contactMessage.style.color = "#f1f5f9";
+  }
+});
+
 const sendEmail = (event) => {
   event.preventDefault();
+
+  if(submitButton.disabled) return;
 
   emailjs
     .sendForm(
@@ -130,6 +169,7 @@ const sendEmail = (event) => {
         }, 5000);
 
         contactForm.reset();
+        submitButton.disabled = true;
       },
       () => {
         contactMessage.textContent =
