@@ -210,5 +210,72 @@
         "icon": "./assets/icons/postgresql.svg"
       }
     ]
+  },
+  {
+    "name": "ChatFusion",
+    "thumbnail": "./assets/images/chatfusion_thumbnail.png",
+    "description": "Real-time chat application. </br></br> - En progreso...",
+    "link": {
+      "type": "repository",
+      "url": "https://github.com/KevinMCJ"
+    },
+    "technologies": [
+      {
+        "name": "JAVASCRIPT",
+        "icon": "./assets/icons/javascript.svg"
+      },
+      {
+        "name": "NEXTJS",
+        "icon": "./assets/icons/nextjs.svg"
+      },
+      {
+        "name": "REACTJS",
+        "icon": "./assets/icons/react.svg"
+      },
+      {
+        "name": "TAILWINDCSS",
+        "icon": "./assets/icons/tailwind-css.svg"
+      },
+      {
+        "name": "FORMIK",
+        "icon": "./assets/icons/formik.svg"
+      },
+      {
+        "name": "YUP",
+        "icon": "./assets/icons/default-tech.svg"
+      },
+      {
+        "name": "NODEJS",
+        "icon": "./assets/icons/nodejs.svg"
+      },
+      {
+        "name": "EXPRESS",
+        "icon": "./assets/icons/express-js.svg"
+      },
+      {
+        "name": "SOCKET.IO",
+        "icon": "./assets/icons/socketio.png"
+      },
+      {
+        "name": "SEQUELIZE",
+        "icon": "./assets/icons/sequelize.svg"
+      },
+      {
+        "name": "POSTGRESQL",
+        "icon": "./assets/icons/postgresql.svg"
+      },
+      {
+        "name": "JWT",
+        "icon": "./assets/icons/jwt.svg"
+      },
+      {
+        "name": "BCRYPT",
+        "icon": "./assets/icons/key.svg"
+      },
+      {
+        "name": "CLOUDINARY",
+        "icon": "./assets/icons/cloudinary.png"
+      }
+    ]
   }
 ]
