@@ -76,7 +76,7 @@
     "description": "Proyecto interactivo e informativo sobre videojuegos que consume la API RAWG. </br></br> - CRUD completo e interactivo. </br> - Diseño responsive con el uso de Figma siguiendo prácticas UX/UI. </br> - Desarrollé una API RESTful robusta que permitió una comunicación segura y eficiente entre el cliente y servidor. </br> - Creación y gestión de la base de datos en PostgreSQL, asegurando un almacenamiento y recuperación eficiente de los datos necesarios para la aplicación. </br> - Formularios con estilos adaptativos. </br> - Borrado y edición de juegos creados. </br> - Paginación intuitiva y dinámica. </br> - Filtros combinados. </br> - Alertas y confirmaciónes utilizando SweetAlert2.",
     "link": {
       "type": "deployment",
-      "url": "https://pi-videogames-front-production-b21d.up.railway.app/"
+      "url": "https://gamedex-pi.netlify.app/"
     },
     "technologies": [
       {
