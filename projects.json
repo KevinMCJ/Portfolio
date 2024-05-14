@@ -72,7 +72,7 @@
   },
   {
     "name": "GameDex",
-    "thumbnail": "./assets/images/gamedex_thumbnail.png",
+    "thumbnail": "./assets/images/gamedex_thumbnail.webp",
     "description": "Proyecto interactivo e informativo sobre videojuegos que consume la API RAWG. </br></br> - CRUD completo e interactivo. </br> - Diseño responsive con el uso de Figma siguiendo prácticas UX/UI. </br> - Desarrollé una API RESTful robusta que permitió una comunicación segura y eficiente entre el cliente y servidor. </br> - Creación y gestión de la base de datos en PostgreSQL, asegurando un almacenamiento y recuperación eficiente de los datos necesarios para la aplicación. </br> - Formularios con estilos adaptativos. </br> - Borrado y edición de juegos creados. </br> - Paginación intuitiva y dinámica. </br> - Filtros combinados. </br> - Alertas y confirmaciónes utilizando SweetAlert2.",
     "link": {
       "type": "deployment",
@@ -119,7 +119,7 @@
   },
   {
     "name": "DoggyPedia",
-    "thumbnail": "./assets/images/doggypedia_thumbnail.png",
+    "thumbnail": "./assets/images/doggypedia_thumbnail.webp",
     "description": "Proyecto interactivo e informativo sobre razas que consume la API DOGS. </br></br>- API RESTful que interactúa con una API de terceros y la propia base de datos.</br> - Aplicación completamente receptiva para cualquier tamaño de pantalla. </br> - Busqueda de razas por nombre. </br> - Vista detallada de una raza. </br> - Creación de una nueva raza. </br> - Filtros por temperamento y origen. </br> - Ordenamiento alfabético y por peso. </br> - Paginación intuitiva y truncada. </br> - Mejores prácticas de UI/UX. </br> - Vista de error 404.",
     "link": {
       "type": "repository",
@@ -166,7 +166,7 @@
   },
   {
     "name": "Rick and morty",
-    "thumbnail": "./assets/images/rickandmorty2.png",
+    "thumbnail": "./assets/images/rickandmorty2.webp",
     "description": "Rick and morty APP. </br></br> - API Restful para Usuarios y Favoritos. </br> - Autenticación por email y contraseña. </br> - Ordenamiento de favoritos por nombre y filtro de género. </br> - Almacenamiento de favoritos para cada usuario. </br> - Diseños distintos para las vistas. </br> - Alertas utilizando SweetAlert2.",
     "link": {
       "type": "repository",
