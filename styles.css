@@ -229,6 +229,12 @@ body {
 
 .home_description {
   margin: 1rem 2rem;
+  margin-bottom: 1.2rem !important;
+}
+
+.home_description b {
+  font-weight: 500;
+  text-shadow: 0px 0px 2px #2364e7;
 }
 
 .social {
