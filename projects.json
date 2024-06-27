@@ -2,10 +2,10 @@
   {
     "name": "SportZone",
     "thumbnail": "./assets/images/sportzone_thumbnail.png",
-    "description": "E-commerce de artículos deportivos. </br> Proyecto grupal en el que desempeñé un papel clave en el front-end. </br></br>[ Algunas de las tareas más importantes que llevé a cabo ] </br>- Creación de los formularios necesarios para el cliente y administrador utilizando Formik/Yup. </br>- Carrito de compras de la aplicación. (uso de localStorage para usuarios no clientes)</br>- Autenticación de terceros con Google y Facebook a través de Firebase. </br> - Barra de búsqueda de la aplicación que incluye una lista de sugerencias. </br> - Detalle de producto con carrusel de imágenes. </br>- Sección de preguntas y respuestas. </br> - Barra de navegación. </br> - Tarjeta de los productos.",
+    "description": "E-commerce de artículos deportivos. </br> Proyecto grupal donde fui clave como desarrollador full stack. </br></br>[ Algunas de las tareas más importantes que llevé a cabo ] </br>- Contribuir en el desarrollo y optimización de la API RESTful.  </br>- Creación de los formularios necesarios para el cliente y administrador utilizando Formik/Yup. </br>- Carrito de compras de la aplicación. (uso de localStorage para usuarios no clientes)</br>- Autenticación de terceros con Google a través de Firebase. </br> - Barra de búsqueda de la aplicación que incluye una lista de sugerencias. </br> - Detalle de producto con carrusel de imágenes. </br>- Sección de preguntas y respuestas. </br> - Tarjeta de los productos.",
     "link": {
       "type": "deployment",
-      "url": "https://frontsportzone.onrender.com/"
+      "url": "https://pfsportzone.netlify.app/"
     },
     "technologies": [
       {
@@ -167,7 +167,7 @@
   {
     "name": "Rick and morty",
     "thumbnail": "./assets/images/rickandmorty2.webp",
-    "description": "Rick and morty APP. </br></br> - API Restful para Usuarios y Favoritos. </br> - Autenticación por email y contraseña. </br> - Ordenamiento de favoritos por nombre y filtro de género. </br> - Almacenamiento de favoritos para cada usuario. </br> - Diseños distintos para las vistas. </br> - Alertas utilizando SweetAlert2.",
+    "description": "Rick and morty APP. </br></br> - API RESTful para Usuarios y Favoritos. </br> - Autenticación por email y contraseña. </br> - Ordenamiento de favoritos por nombre y filtro de género. </br> - Almacenamiento de favoritos para cada usuario. </br> - Diseños distintos para las vistas. </br> - Alertas utilizando SweetAlert2.",
     "link": {
       "type": "repository",
       "url": "https://github.com/KevinMCJ/rick_and_morty_app"
@@ -214,7 +214,7 @@
   {
     "name": "ChatFusion",
     "thumbnail": "./assets/images/chatfusion_thumbnail.png",
-    "description": "Real-time chat application. </br></br> - En progreso...",
+    "description": "Aplicación de Chat en tiempo real. </br></br> [ Realizado ] </br> — Chats individuales y grupales </br> — Envió de multimedia (imagenes y videos) </br> — Solicitudes de amistad </br> — Mensajeria instantanea e interacción optimista con la UI </br> — Autenticación con NextAuth </br> — Totalmente responsive </br></br> [ En progreso... ] </br> — Llamadas (video o solo audio) </br> — Notificaciónes ",
     "link": {
       "type": "repository",
       "url": "https://github.com/KevinMCJ"
