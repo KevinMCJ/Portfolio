@@ -1,10 +1,148 @@
 [
   {
+    "name": "ChatFusion",
+    "thumbnail": "./assets/images/chatfusion_thumbnail.png",
+    "description": "Aplicación de Chat en tiempo real. </br></br> [ Realizado ] </br> — Chats individuales y grupales </br> — Envió de multimedia (imagenes y videos) </br> — Solicitudes de amistad </br> — Mensajeria instantanea e interacción optimista con la UI </br> — Autenticación con NextAuth </br> — Totalmente responsive </br></br> [ En progreso... ] </br> — Llamadas (video o solo audio) </br> — Notificaciónes ",
+    "link": {
+      "type": "repositorio",
+      "url": "https://github.com/KevinMCJ"
+    },
+    "technologies": [
+      {
+        "name": "JAVASCRIPT",
+        "icon": "./assets/icons/javascript.svg"
+      },
+      {
+        "name": "NEXTJS",
+        "icon": "./assets/icons/nextjs.svg"
+      },
+      {
+        "name": "REACTJS",
+        "icon": "./assets/icons/react.svg"
+      },
+      {
+        "name": "TAILWINDCSS",
+        "icon": "./assets/icons/tailwind-css.svg"
+      },
+      {
+        "name": "FORMIK",
+        "icon": "./assets/icons/formik.svg"
+      },
+      {
+        "name": "YUP",
+        "icon": "./assets/icons/default-tech.svg"
+      },
+      {
+        "name": "NODEJS",
+        "icon": "./assets/icons/nodejs.svg"
+      },
+      {
+        "name": "EXPRESS",
+        "icon": "./assets/icons/express-js.svg"
+      },
+      {
+        "name": "SOCKET.IO",
+        "icon": "./assets/icons/socketio.png"
+      },
+      {
+        "name": "SEQUELIZE",
+        "icon": "./assets/icons/sequelize.svg"
+      },
+      {
+        "name": "POSTGRESQL",
+        "icon": "./assets/icons/postgresql.svg"
+      },
+      {
+        "name": "JWT",
+        "icon": "./assets/icons/jwt.svg"
+      },
+      {
+        "name": "BCRYPT",
+        "icon": "./assets/icons/key.svg"
+      },
+      {
+        "name": "CLOUDINARY",
+        "icon": "./assets/icons/cloudinary.png"
+      }
+    ]
+  },
+  {
+    "name": "FisiomFulness | Salud y Bienestar",
+    "thumbnail": "./assets/images/fisiom_thumbnail.webp",
+    "description": "Colaboré en desarrollo de la web para una Start-up del rubro de la salud, como desarrollador fullstack trabaje junto a un equipo multidisciplinario bajo la metodología SCRUM. Fui parte clave en el desarrollo de la API RESTful y la conexión de las diferentes vistas con la BDD. </br></br> — Tareas que llevé a cabo:</br> [ BACKEND ] </br> - Diseño y CRUDs de diferentes entidades (MongoDB/Mongoose) </br> - Autenticación basada en cookies con JWT </br> - Desarrollo de middlewares -> Autorización por roles | Validación de datos con ZOD | Subida de archivos a Cloudinary </br> - Manejo de errores personalizado </br></br> [ FRONTEND ] </br> - Sección de blogs | Detalle | Formulario de creación/edición | Mis blogs | Comentarios </br> - Servicios de Profesional | Formulario de creación/edición | Mis servicios | Botón WhatsApp </br> - Sección &quot;pregunta a un experto&quot; | Formulario de pregunta y respuesta | Moderación </br> - Formulario de inicio de sesión / registro (profesional/usuario) </br> - Vista &quot;editar perfil&quot; | Campos por rol (profesional/usuario) | Verificación de contraseña para datos sensibles | Actualización de sesión con NextAuth </br> - Detalle de profesional | Ratings | Turnos | Experiencia </br> - Protección de rutas basada en roles con NextAuth </br> - Vistas responsivas siguiendo el enfoque mobile-first, aportando al diseño de Figma",
+    "link": {
+      "type": "PRESENTACIÓN",
+      "url": "https://www.canva.com/design/DAGOZ0Bv6oQ/18VVwrjFKEe9lfQY2Vy68Q/watch?utm_content=DAGOZ0Bv6oQ&utm_campaign=designshare&utm_medium=link&utm_source=editor"
+    },
+    "technologies": [
+      {
+        "name": "JAVASCRIPT",
+        "icon": "./assets/icons/javascript.svg"
+      },
+      {
+        "name": "NEXTJS",
+        "icon": "./assets/icons/nextjs.svg"
+      },
+      {
+        "name": "NEXTAUTH",
+        "icon": "./assets/icons/nextauth.png"
+      },
+      {
+        "name": "REACTJS",
+        "icon": "./assets/icons/react.svg"
+      },
+      {
+        "name": "TAILWINDCSS",
+        "icon": "./assets/icons/tailwind-css.svg"
+      },
+      {
+        "name": "FORMIK",
+        "icon": "./assets/icons/formik.svg"
+      },
+      {
+        "name": "ZOD",
+        "icon": "./assets/icons/zod.svg"
+      },
+      {
+        "name": "NODEJS",
+        "icon": "./assets/icons/nodejs.svg"
+      },
+      {
+        "name": "EXPRESS",
+        "icon": "./assets/icons/express-js.svg"
+      },
+      {
+        "name": "MONGODB",
+        "icon": "./assets/icons/mongodb.svg"
+      },
+      {
+        "name": "MONGOOSE",
+        "icon": "./assets/icons/mongoose.svg"
+      },
+      {
+        "name": "SOCKET.IO",
+        "icon": "./assets/icons/socketio.png"
+      },
+      {
+        "name": "JWT",
+        "icon": "./assets/icons/jwt.svg"
+      },
+      {
+        "name": "BCRYPT",
+        "icon": "./assets/icons/key.svg"
+      },
+      {
+        "name": "CLOUDINARY",
+        "icon": "./assets/icons/cloudinary.png"
+      }
+    ]
+  },
+  {
     "name": "SportZone",
     "thumbnail": "./assets/images/sportzone_thumbnail.png",
     "description": "E-commerce de artículos deportivos. </br> Proyecto grupal donde fui clave como desarrollador full stack. </br></br>[ Algunas de las tareas más importantes que llevé a cabo ] </br>- Contribuir en el desarrollo y optimización de la API RESTful.  </br>- Creación de los formularios necesarios para el cliente y administrador utilizando Formik/Yup. </br>- Carrito de compras de la aplicación. (uso de localStorage para usuarios no clientes)</br>- Autenticación de terceros con Google a través de Firebase. </br> - Barra de búsqueda de la aplicación que incluye una lista de sugerencias. </br> - Detalle de producto con carrusel de imágenes. </br>- Sección de preguntas y respuestas. </br> - Tarjeta de los productos.",
     "link": {
-      "type": "deployment",
+      "type": "despliegue",
       "url": "https://pfsportzone.netlify.app/"
     },
     "technologies": [
@@ -75,7 +213,7 @@
     "thumbnail": "./assets/images/gamedex_thumbnail.webp",
     "description": "Proyecto interactivo e informativo sobre videojuegos que consume la API RAWG. </br></br> - CRUD completo e interactivo. </br> - Diseño responsive con el uso de Figma siguiendo prácticas UX/UI. </br> - Desarrollé una API RESTful robusta que permitió una comunicación segura y eficiente entre el cliente y servidor. </br> - Creación y gestión de la base de datos en PostgreSQL, asegurando un almacenamiento y recuperación eficiente de los datos necesarios para la aplicación. </br> - Formularios con estilos adaptativos. </br> - Borrado y edición de juegos creados. </br> - Paginación intuitiva y dinámica. </br> - Filtros combinados. </br> - Alertas y confirmaciónes utilizando SweetAlert2.",
     "link": {
-      "type": "deployment",
+      "type": "despliegue",
       "url": "https://gamedex-pi.netlify.app/"
     },
     "technologies": [
@@ -122,7 +260,7 @@
     "thumbnail": "./assets/images/doggypedia_thumbnail.webp",
     "description": "Proyecto interactivo e informativo sobre razas que consume la API DOGS. </br></br>- API RESTful que interactúa con una API de terceros y la propia base de datos.</br> - Aplicación completamente receptiva para cualquier tamaño de pantalla. </br> - Busqueda de razas por nombre. </br> - Vista detallada de una raza. </br> - Creación de una nueva raza. </br> - Filtros por temperamento y origen. </br> - Ordenamiento alfabético y por peso. </br> - Paginación intuitiva y truncada. </br> - Mejores prácticas de UI/UX. </br> - Vista de error 404.",
     "link": {
-      "type": "repository",
+      "type": "repositorio",
       "url": "https://github.com/KevinMCJ/DoggyPedia"
     },
     "technologies": [
@@ -169,7 +307,7 @@
     "thumbnail": "./assets/images/rickandmorty2.webp",
     "description": "Rick and morty APP. </br></br> - API RESTful para Usuarios y Favoritos. </br> - Autenticación por email y contraseña. </br> - Ordenamiento de favoritos por nombre y filtro de género. </br> - Almacenamiento de favoritos para cada usuario. </br> - Diseños distintos para las vistas. </br> - Alertas utilizando SweetAlert2.",
     "link": {
-      "type": "repository",
+      "type": "repositorio",
       "url": "https://github.com/KevinMCJ/rick_and_morty_app"
     },
     "technologies": [
@@ -208,73 +346,6 @@
       {
         "name": "POSTGRESQL",
         "icon": "./assets/icons/postgresql.svg"
-      }
-    ]
-  },
-  {
-    "name": "ChatFusion",
-    "thumbnail": "./assets/images/chatfusion_thumbnail.png",
-    "description": "Aplicación de Chat en tiempo real. </br></br> [ Realizado ] </br> — Chats individuales y grupales </br> — Envió de multimedia (imagenes y videos) </br> — Solicitudes de amistad </br> — Mensajeria instantanea e interacción optimista con la UI </br> — Autenticación con NextAuth </br> — Totalmente responsive </br></br> [ En progreso... ] </br> — Llamadas (video o solo audio) </br> — Notificaciónes ",
-    "link": {
-      "type": "repository",
-      "url": "https://github.com/KevinMCJ"
-    },
-    "technologies": [
-      {
-        "name": "JAVASCRIPT",
-        "icon": "./assets/icons/javascript.svg"
-      },
-      {
-        "name": "NEXTJS",
-        "icon": "./assets/icons/nextjs.svg"
-      },
-      {
-        "name": "REACTJS",
-        "icon": "./assets/icons/react.svg"
-      },
-      {
-        "name": "TAILWINDCSS",
-        "icon": "./assets/icons/tailwind-css.svg"
-      },
-      {
-        "name": "FORMIK",
-        "icon": "./assets/icons/formik.svg"
-      },
-      {
-        "name": "YUP",
-        "icon": "./assets/icons/default-tech.svg"
-      },
-      {
-        "name": "NODEJS",
-        "icon": "./assets/icons/nodejs.svg"
-      },
-      {
-        "name": "EXPRESS",
-        "icon": "./assets/icons/express-js.svg"
-      },
-      {
-        "name": "SOCKET.IO",
-        "icon": "./assets/icons/socketio.png"
-      },
-      {
-        "name": "SEQUELIZE",
-        "icon": "./assets/icons/sequelize.svg"
-      },
-      {
-        "name": "POSTGRESQL",
-        "icon": "./assets/icons/postgresql.svg"
-      },
-      {
-        "name": "JWT",
-        "icon": "./assets/icons/jwt.svg"
-      },
-      {
-        "name": "BCRYPT",
-        "icon": "./assets/icons/key.svg"
-      },
-      {
-        "name": "CLOUDINARY",
-        "icon": "./assets/icons/cloudinary.png"
       }
     ]
   }
